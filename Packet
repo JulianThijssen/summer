@@ -1,0 +1,15 @@
+ServerList
+
+Client -> Server : Join request = 1 byte
+Server -> Client : Request accepted = 1 byte        Keep connection to server
+Server -> Client : Request denied = 1 byte          Purge connection to server
+
+
+
+Lobby
+
+Server -> Client : ID = 1 byte + ? bytes
+Server -> Client : User joined = 1 byte + ? bytes
+Server -> Client : User left = 1 byte + ? bytes
+Server -> Client : Room closed = 1 byte
+Server -> Client : Start = 1 byte
